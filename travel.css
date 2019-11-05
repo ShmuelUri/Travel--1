@@ -1,0 +1,48 @@
+#container{
+    display: flex;
+    flex-wrap:wrap;
+    flex-direction: row
+}
+div > div{
+    width: 400px;
+    height: 300px;
+    border: double rebeccapurple;
+    background-color: burlywood;
+    margin: 10%;
+    overflow: auto
+    
+}
+table{
+    width: 397px;
+    height: 297px;
+    margin: -2;
+    margin-top: -3;
+    border: 2px black
+    
+    
+}
+thead{
+    background-color: blueviolet
+}
+tr{
+    text-align: center
+}
+label{
+    width: 300px;
+    display: inline-block;  
+}
+button{
+    width: 100px;
+    height: 80px;
+    background-color:blueviolet;
+    clip: auto;
+    -webkit-text-fill-color:white;
+    border: double black;
+    text-size-adjust: 20px
+}
+body{
+    background-color: bisque
+}
+#show{
+    height: 180px
+}

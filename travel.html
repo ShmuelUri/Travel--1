@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Travel</title>
+    <link rel="stylesheet" href="travel.css">
+</head>
+<body>
+    <div id="container">
+        <div>
+            <table>
+                <thead>
+                    <th>id</th>
+                    <th>dastnation</th>
+                    <th>price</th>
+                </thead>
+                <tbody id="dest-body-table">
+                </tbody>
+            </table>
+        </div>
+        <div>
+            <table >
+                <thead>
+                    <th>code</th>
+                    <th>name</th>
+                    <th>id</th>
+                    <th>location</th>
+                    <th>number of pas</th>
+                    <th>Total</th>
+                </thead>
+                <tbody id="register-body-table"></tbody>
+            </table>
+        </div>
+        <div>
+            <label for="name">name</label>
+            <input type="text" id="name"><br>
+
+            <label for="id">id</label>
+            <input type="text" id="id"><br>
+
+            <label for="code">travel code</label>
+            <input type="text" id="code"><br>
+
+            <label for="numberofPass">number of pass</label>
+            <input type="text" id="numberofPass"><br>
+            <hr>
+            <hr>
+            <hr>
+            <button onclick="submit()">send</button>
+
+        </div>
+        <div>
+            <label for="serch">Enter your name</label>
+            <input type="text" id="serch" onkeyup="serch()">
+            <hr>
+            <hr>
+           
+                <table id="show" >
+                    <thead>
+                        <th>code</th>
+                        <th>name</th>
+                        <th>id</th>
+                        <th>location</th>
+                        <th>number of pas</th>
+                        <th>Total</th>
+                    </thead>
+                    <tbody id="serch_solation"></tbody>
+                </table>
+         
+            <hr>
+            <hr>
+            <span>Total:</span>
+            <span id="total"></span>
+        </div>
+        <div>
+            <span>select the dasenation:</span><br>
+            <select  id="select" onchange="show_the_items()"></select>
+            
+            <table >
+                <thead>
+                    <th>code</th>
+                    <th>name</th>
+                    <th>id</th>
+                    <th>location</th>
+                    <th>number of pas</th>
+                    <th>Total</th>
+                </thead>
+                <tbody id="selectd-body-table"></tbody>
+            </table>
+        </div>
+    </div>
+    <script src="travel.js"></script>
+</body>
+</html>
